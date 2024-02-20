@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.video {
+  height: 90vh;
+  position: relative;
+  object-fit: cover;
+}
+.hero video {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+.hero > div {
+  position: absolute;
+  background: rgba(197, 177, 177, 0.328);
+  width: 350px;
+  padding: 8px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  top: 30vh;
+  left: 10vw;
+}
+
+.down {
+  font-size: 5rem;
+  color: rgba(216, 205, 200, 0.619);
+  position: absolute;
+  left: 50%;
+  bottom: 200px;
+
+  transform: rotate(90deg);
+  animation: godown 1s infinite;
+}
+
+@keyframes godown {
+  0% {
+    bottom: 300px;
+    left: 50%;
+  }
+
+  100% {
+    bottom: 200px;
+    left: 50%;
+  }
+}
+
+/* navbar */
+nav {
+  background-color: black;
+  color: whitesmoke;
+  margin-top: -5px;
+}
+nav > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+  padding: 0.5rem 0;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin-left: 1.3rem;
+}
+nav ul li:hover {
+  color: rgb(156, 129, 129);
+  transform: scale(1.3);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+/* paragraphs */
+
+/* image section */
+/* .img1 .img2 .img3 .img4 { */
+[class^="img"] {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img1 {
+  background: url(./Assets/a.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.img2 {
+  background: url(./Assets/b.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.img3 {
+  background: url(./Assets/c.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.img4 {
+  background: url(./Assets/d.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.title {
+  background: rgba(245, 245, 245, 0.164);
+  color: white;
+  font-size: 2rem;
+  padding: 1.4rem 5rem;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+/* 
+footer */
+footer {
+  background-color: black;
+  color: wheat;
+  padding: 3rem;
+  text-align: center;
+}
